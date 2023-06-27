@@ -1,38 +1,143 @@
-.App {
-  text-align: center;
+#root{
+  height: 100vh;
+  width: 100vw;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: antiquewhite;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p{
+  margin: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-container{
+  display: flex;
+  height: calc(100vh - 60px);
+  width: 80%;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  background-color: antiquewhite;
+  padding: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.document-container{
+  height: 90vh;
+  width: 50%;
+  background-color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 3px solid black;
+}
+
+
+.editor-container{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  height: 100%;
+  overflow-y: auto
+}
+
+
+#phone-number::-webkit-outer-spin-button, #phone-number::-webkit-inner-spin-button, #phone-number{
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance: textfield;
+}
+
+.heading-editor-container input{
+  width: 55%;
+  height: 20px;
+}
+
+.input-field{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
+}
+
+.heading-editor-container, .education-editor-container, .experience-editor-container{
+  border: 2px solid black;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: rgba(128, 128, 128, 0.534);
+}
+
+.education-editor-container > form, .experience-editor-container > form{
+  border: solid 2px black;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  background-color: lightgrey;
+}
+
+.delete-section{
+  border-radius: 50%;
+  align-self: flex-end;
+  position: absolute;
+  right: -8px;
+  top: -8px;
+}
+
+
+.heading-container{
+  border: 2px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 5px 0px 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.header-name{
+  font-size: 2.50rem;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-secondary{
+  font-size: 1.35rem;
+  font-weight: bold;
+}
+
+.education-container, .experience-container{
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.education-container > p, .experience-container > p{
+  font-size: 1.85rem;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.section-top{
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.50rem;
+}
+
+.section-bottom{
+  font-style: italic;
+  font-size: 1.25rem;
+}
+
+.school-top, .school-bottom{
+  font-weight: 400;
 }
