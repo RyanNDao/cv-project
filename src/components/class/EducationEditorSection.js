@@ -10,7 +10,6 @@ export default class EducationEditorSection extends Component{
 
     render(){
         const {className, school, appFunctions } = this.props;
-        console.log(school) 
         return (
             <form className={className}>
                 <button className="delete-section" onClick={appFunctions.removeEducation}>X</button>

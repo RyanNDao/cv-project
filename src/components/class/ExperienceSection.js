@@ -16,9 +16,6 @@ export default class ExperienceSection extends Component{
                 <div className="section-bottom">
                     <span>{job.positionTitle}</span>
                 </div>
-                
-                
-                
                 <ul>
                     {
                         job.jobDescriptions.map((description)=>{

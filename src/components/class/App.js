@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../App.css';
+import '../../App.css';
 import Document from './Document';
 import Editor from './Editor';
 import uniqid from "uniqid";
@@ -80,7 +80,6 @@ export default class App extends Component{
                 this.setState({
                     educationList: deepCopy
                 })
-                
             },
             removeEducation: function(event){
                 event.preventDefault();

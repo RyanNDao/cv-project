@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Heading from './Heading';
 import Education from './Education';
 import Experience from './Experience';
-import '../App.css';
 
 export default class Document extends Component{
     constructor(props){
