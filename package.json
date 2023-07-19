@@ -12,7 +12,7 @@
     "uniqid": "^5.4.0",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "http://ryanndao.github.io/cv-project",
+  "homepage": ".",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
